@@ -1,4 +1,4 @@
-package app.login;
+package app;
 
 import app.common.*;
 import java.awt.*;
@@ -28,16 +28,10 @@ public class InitView extends JPanel {
     text2.setLocation(150, 350);
     add(text2);
 
-    MyButton loginButton = new MyButton("Login", "md", "primary");
+    MyButton loginButton = new MyButton("Start", "md", "primary");
     loginButton.setLocation(160, 700);
-    loginButton.addActionListener(e -> Router.navigate("login"));
-
-    MyButton registerButton = new MyButton("Register", "sm", "text");
-    registerButton.setSize(90, 28);
-    registerButton.setLocation(155, 750);
-    loginButton.addActionListener(e -> Router.navigate("register"));
+    loginButton.addActionListener(e -> Router.navigate("home"));
 
     add(loginButton);
-    add(registerButton);
   }
 }

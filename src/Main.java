@@ -1,7 +1,9 @@
-import javax.swing.*;
+import app.InitView;
 import app.common.Router;
-
-import app.login.*;
+import app.home.HomeView;
+import app.test.TestView;
+import app.user.UserView;
+import javax.swing.*;
 
 public class Main extends JFrame {
 
@@ -13,7 +15,9 @@ public class Main extends JFrame {
 
     // route point start
     Router.addRoute("init", new InitView());
-    Router.addRoute("login", new LoginView());
+    Router.addRoute("home", new HomeView());
+    Router.addRoute("user", new UserView());
+    Router.addRoute("test", new TestView());
     // route point end
 
     add(Router.mainView);

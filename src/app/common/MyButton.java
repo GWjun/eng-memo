@@ -37,6 +37,7 @@ public class MyButton extends JButton {
   private void applyStyles() {
     setContentAreaFilled(false); // for custom color
     setBorderPainted(false);
+    setFocusPainted(false);
 
     switch (variant) {
       case "primary" -> {
