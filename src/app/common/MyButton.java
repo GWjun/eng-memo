@@ -1,16 +1,16 @@
-package ui.common;
+package app.common;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionListener;
 
-public class Button extends JButton {
+public class MyButton extends JButton {
 
   private String size;
   private String variant;
   private Color pressedBackgroundColor;
 
-  public Button(String text, String size, String variant) {
+  public MyButton(String text, String size, String variant) {
     super(text);
     this.size = size;
     this.variant = variant;
@@ -18,7 +18,7 @@ public class Button extends JButton {
     applyStyles();
   }
 
-  public Button(String text, String size, String variant, ActionListener onClick) {
+  public MyButton(String text, String size, String variant, ActionListener onClick) {
     this(text, size, variant);
     this.addActionListener(onClick);
   }

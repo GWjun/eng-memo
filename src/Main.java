@@ -1,7 +1,7 @@
 import javax.swing.*;
-import java.awt.*;
-import java.awt.event.*;
-import ui.common.Button;
+import app.common.Router;
+
+import app.login.*;
 
 public class Main extends JFrame {
 
@@ -11,18 +11,13 @@ public class Main extends JFrame {
     setResizable(false);
     setIconImage(new ImageIcon("src/resource/images/logo.png").getImage());
 
-    Container c = getContentPane();
-    c.setLayout(null);
+    // route point start
+    Router.addRoute("init", new InitView());
+    Router.addRoute("login", new LoginView());
+    // route point end
 
-    Button loginButton = new Button("Login", "md", "primary");
-    loginButton.setLocation(160, 700);
-
-    Button registerButton = new Button("Register", "sm", "text");
-    registerButton.setSize(90, 28);
-    registerButton.setLocation(155, 750);
-
-    c.add(loginButton);
-    c.add(registerButton);
+    add(Router.mainView);
+    Router.navigate("init");
 
     setSize(400, 900);
     setVisible(true);
