@@ -1,0 +1,39 @@
+word:apple
+meanings:sagwa
+examples:You ate an apple.,She loves apple pie.
+
+word:banana
+meanings:banana
+examples:Bananas are yellow.,I like bananas.
+
+word:cat
+meanings:goyangi
+examples:The cat is sleeping.,She adopted a cat.
+
+word:dog
+meanings:gae
+examples:The dog is barking.,I love dogs.
+
+word:book
+meanings:chaek
+examples:I read a book yesterday.,Books are fun to read.
+
+word:mountain
+meanings:san
+examples:We climbed a mountain.,The mountain was beautiful.
+
+word:river
+meanings:gang
+examples:The river flows to the sea.,We swam in the river.
+
+word:forest
+meanings:sum
+examples:The forest is dense.,Many animals live in the forest.
+
+word:philosophy
+meanings:cheolhak
+examples:I am studying philosophy.,Philosophy is a complex subject.
+
+word:mathematics
+meanings:suhak
+examples:Mathematics is my favorite subject.,She excels in mathematics.

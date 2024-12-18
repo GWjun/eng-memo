@@ -28,10 +28,10 @@ public class InitView extends JPanel {
     text2.setLocation(150, 350);
     add(text2);
 
-    MyButton loginButton = new MyButton("Start", "md", "primary");
-    loginButton.setLocation(160, 700);
-    loginButton.addActionListener(e -> Router.navigate("home"));
+    JButton startButton = new MyButton("Start", "md", "primary");
+    startButton.setLocation(160, 700);
+    startButton.addActionListener(e -> Router.navigate("home"));
 
-    add(loginButton);
+    add(startButton);
   }
 }

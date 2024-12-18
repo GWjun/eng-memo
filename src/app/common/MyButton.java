@@ -45,7 +45,7 @@ public class MyButton extends JButton {
         setForeground(Color.white);
         this.pressedBackgroundColor = new Color(12, 87, 205);
       }
-      case "secondary" -> setBackground(new Color(169, 198, 255));
+      case "secondary" -> setBackground(new Color(204, 221, 255));
       case "destructive" -> {
         setBackground(new Color(234, 67, 53));
         setForeground(Color.white);
