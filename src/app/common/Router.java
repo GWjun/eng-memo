@@ -20,6 +20,8 @@ public class Router {
   public static void navigate(String name) {
     if (map.containsKey(name)) {
       if (current != null) {
+        if (current.equals(name)) return;
+
         history.push(current);
       }
       current = name;

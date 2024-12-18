@@ -1,8 +1,9 @@
 import app.InitView;
 import app.common.Router;
 import app.home.HomeView;
+import app.learning.LearningView;
 import app.test.TestView;
-import app.user.UserView;
+import app.word.WordView;
 import javax.swing.*;
 
 public class Main extends JFrame {
@@ -16,8 +17,9 @@ public class Main extends JFrame {
     // route point start
     Router.addRoute("init", new InitView());
     Router.addRoute("home", new HomeView());
-    Router.addRoute("user", new UserView());
+    Router.addRoute("learning", new LearningView());
     Router.addRoute("test", new TestView());
+    Router.addRoute("word", new WordView());
     // route point end
 
     add(Router.mainView);

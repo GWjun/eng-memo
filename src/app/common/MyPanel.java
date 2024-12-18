@@ -6,7 +6,7 @@ import javax.swing.*;
 public class MyPanel extends JPanel {
   public MyPanel() {
     setBackground(Color.WHITE);
-    setSize(365, 70);
+    setSize(365, 240);
     setOpaque(false);
   }
 
