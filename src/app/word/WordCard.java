@@ -15,13 +15,13 @@ public class WordCard extends MyPanel {
     JPanel header = new JPanel();
     header.setLayout(new FlowLayout(FlowLayout.LEFT));
     header.setLocation(10, 10);
-    header.setSize(340, 30);
+    header.setSize(345, 30);
     header.setBackground(Color.WHITE);
 
     JPanel content = new JPanel();
     content.setLayout(new GridLayout(0, 1));
     content.setLocation(20, 40);
-    content.setSize(340, 45);
+    content.setSize(345, 45);
     content.setBackground(Color.WHITE);
 
     if (idx != -1) {

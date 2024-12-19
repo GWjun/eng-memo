@@ -2,6 +2,7 @@ import app.InitView;
 import app.common.Router;
 import app.home.HomeView;
 import app.learning.LearningView;
+import app.learning.ReviewView;
 import app.test.TestView;
 import app.word.WordView;
 import javax.swing.*;
@@ -20,6 +21,7 @@ public class Main extends JFrame {
     Router.addRoute("learning", new LearningView());
     Router.addRoute("test", new TestView());
     Router.addRoute("word", new WordView());
+    Router.addRoute("review", new ReviewView());
     // route point end
 
     add(Router.mainView);

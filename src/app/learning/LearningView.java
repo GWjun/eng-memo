@@ -27,10 +27,10 @@ public class LearningView extends MyLayout {
       contentPanel.add(card);
       offset += 110;
     }
-    JButton goTestButton = new MyButton("Go Test", "md", "secondary");
-    goTestButton.setLocation(160, offset + 50);
-    contentPanel.add(goTestButton);
-    //    goTestButton.addActionListener();
+    JButton goReivewButton = new MyButton("Go Review", "lg", "secondary");
+    goReivewButton.setLocation(145, offset + 50);
+    goReivewButton.addActionListener(e -> Router.navigate("review"));
+    contentPanel.add(goReivewButton);
 
     contentPanel.setPreferredSize(new Dimension(360, offset + 300));
     scrollPane.setViewportView(contentPanel);
