@@ -25,7 +25,7 @@ public class Main extends JFrame {
     // route point end
 
     add(Router.mainView);
-    Router.navigate("init");
+    Router.navigate("review");
 
     setSize(400, 900);
     setVisible(true);
