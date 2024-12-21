@@ -1,11 +1,8 @@
 package app.learning;
 
 import app.common.*;
-import app.word.WordCard;
-import app.word.WordData;
 import javax.swing.*;
 import java.awt.*;
-import java.util.ArrayList;
 import java.util.List;
 
 public class LearningView extends MyLayout {
@@ -19,7 +16,17 @@ public class LearningView extends MyLayout {
     JPanel contentPanel = new JPanel();
     contentPanel.setLayout(null);
 
-    List<JPanel> cards = makeCards();
+    List<JPanel> cards = Util.makeCards("src/today.txt");
+
+    if (cards.isEmpty()) {
+      JLabel emptyText = new JLabel("The word list is empty. Try adding some words.");
+      emptyText.setFont(new Font("Arial", Font.BOLD, 15));
+      emptyText.setSize(380, 20);
+      emptyText.setLocation(25, 100);
+      add(emptyText);
+      return;
+    }
+
     int offset = 10;
     for (JPanel card : cards) {
       card.setSize(360, 100);
@@ -36,19 +43,5 @@ public class LearningView extends MyLayout {
     scrollPane.setViewportView(contentPanel);
 
     add(scrollPane);
-  }
-
-  private List<JPanel> makeCards() {
-    List<JPanel> cards = new ArrayList<>();
-
-    List<WordData> wordDataList = Util.readWordData("src/today.txt");
-    for (int i = 0; i < wordDataList.size(); i++) {
-      JPanel card = new WordCard(i + 1, wordDataList.get(i));
-
-      card.setPreferredSize(new Dimension(360, 100));
-      cards.add(card);
-    }
-
-    return cards;
   }
 }

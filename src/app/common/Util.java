@@ -1,8 +1,11 @@
 package app.common;
 
+import app.word.WordCard;
 import app.word.WordData;
+import java.awt.Dimension;
 import java.io.*;
 import java.util.*;
+import javax.swing.JPanel;
 
 public class Util {
 
@@ -39,6 +42,44 @@ public class Util {
     }
 
     return wordDataList;
+  }
+
+  public static void writeWordData(List<Integer> idxList, List<WordData> wordDataList) {
+    try (BufferedWriter writer = new BufferedWriter(new FileWriter("src/word.txt", true))) {
+      for (int i : idxList) {
+          WordData wordData = wordDataList.get(i);
+          writer.write(formatWordData(wordData));
+      }
+    } catch (IOException e) {
+      throw new RuntimeException(e);
+    }
+  }
+
+  private static String formatWordData(WordData wordData) {
+    return "\n"
+        + "word:"
+        + wordData.getWord()
+        + "\n"
+        + "meanings:"
+        + String.join(",", wordData.getMeaning())
+        + "\n"
+        + "examples:"
+        + String.join(",", wordData.getSentence())
+        + "\n";
+  }
+
+  public static List<JPanel> makeCards(String src) {
+    List<JPanel> cards = new ArrayList<>();
+
+    List<WordData> wordDataList = Util.readWordData(src);
+    for (int i = 0; i < wordDataList.size(); i++) {
+      JPanel card = new WordCard(i + 1, wordDataList.get(i));
+
+      card.setPreferredSize(new Dimension(360, 100));
+      cards.add(card);
+    }
+
+    return cards;
   }
 
   public static int getLCS(String s1, String s2) {

@@ -4,12 +4,16 @@ import app.common.*;
 import app.test.TestCard;
 import app.word.WordData;
 import java.awt.*;
+import java.util.ArrayList;
 import java.util.List;
 import javax.swing.*;
 
 public class ReviewView extends MyLayout {
   private final List<WordData> wordDataList;
   private int idx;
+  private boolean isCorrect;
+  private final List<Integer> inCorrectIdx;
+
   private final CardLayout cardLayout;
   private final JPanel cardPanel;
   private final JLabel result;
@@ -19,6 +23,8 @@ public class ReviewView extends MyLayout {
   public ReviewView() {
     wordDataList = Util.readWordData("src/today.txt");
     idx = 0;
+    isCorrect = false;
+    inCorrectIdx = new ArrayList<>();
 
     cardLayout = new CardLayout();
     cardPanel = new JPanel(cardLayout);
@@ -62,7 +68,7 @@ public class ReviewView extends MyLayout {
   }
 
   private void handleClick() {
-    if (result.getText().equals("Correct!")) {
+    if (isCorrect) {
       showNextCard();
     } else {
       checkAnswer();
@@ -76,6 +82,7 @@ public class ReviewView extends MyLayout {
 
     if (answer.equalsIgnoreCase(input)) {
       result.setText("Correct!");
+      isCorrect = true;
       result.setForeground(new Color(19, 120, 19));
       submitButton.setText("next");
       nextButton.setVisible(false);
@@ -88,15 +95,22 @@ public class ReviewView extends MyLayout {
   }
 
   private void showNextCard() {
+    if (!isCorrect) {
+      inCorrectIdx.add(idx);
+    }
+
     if (idx + 1 < wordDataList.size()) {
+      // reset state && render next card
       idx++;
-      cardLayout.show(cardPanel, "card" + idx);
       result.setText("");
+      isCorrect = false;
       submitButton.setText("submit");
       nextButton.setVisible(false);
+      cardLayout.show(cardPanel, "card" + idx);
     } else {
-      System.out.println("END");
+      // end review
       nextButton.setVisible(false);
+      new EndModal(inCorrectIdx, wordDataList);
     }
   }
 }
