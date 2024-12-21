@@ -1,0 +1,174 @@
+word:sun
+meanings:taeyang
+examples:The sun is shining.,I like the sun.
+scores:2
+
+word:moon
+meanings:dal
+examples:The moon is bright.,We saw the moon.
+scores:2
+
+word:tree
+meanings:namu
+examples:There are many trees.,I climbed a tree.
+scores:2
+
+word:flower
+meanings:kkot
+examples:She gave me a flower.,The flowers are beautiful.
+scores:2
+
+word:bird
+meanings:sae
+examples:The bird is singing.,I saw a bird.
+scores:2
+
+word:rain
+meanings:bi
+examples:It is raining.,I like the rain.
+scores:2
+
+word:snow
+meanings:nun
+examples:It is snowing.,We played in the snow.
+scores:2
+
+word:star
+meanings:byeol
+examples:The stars are twinkling.,I saw a shooting star.
+scores:2
+
+word:sea
+meanings:bada
+examples:I went to the sea.,The sea is blue.
+scores:2
+
+word:sky
+meanings:haneul
+examples:The sky is clear.,The sky is blue.
+scores:2
+
+word:wind
+meanings:baram
+examples:The wind is blowing.,The wind is strong.
+scores:2
+
+word:light
+meanings:bit
+examples:Turn on the light.,The light is bright.
+scores:2
+
+word:dark
+meanings:eodum
+examples:It is dark outside.,I am afraid of the dark.
+scores:2
+
+word:food
+meanings:eumsik
+examples:I eat food.,The food is delicious.
+scores:2
+
+word:name
+meanings:ireum
+examples:What is your name?,My name is John.
+scores:2
+
+word:country
+meanings:nara
+examples:I live in Korea.,He visited many countries.
+scores:3
+
+word:world
+meanings:segye
+examples:The world is big.,We live in the world.
+scores:3
+
+word:people
+meanings:saramdeul
+examples:There are many people.,I met many people.
+scores:3
+
+word:city
+meanings:dosi
+examples:I live in a city.,This city is big.
+scores:3
+
+word:story
+meanings:iyagi
+examples:Tell me a story.,This is an interesting story.
+scores:3
+
+word:idea
+meanings:aidieo
+examples:I have an idea.,That is a good idea.
+scores:3
+
+word:question
+meanings:jilmun
+examples:I have a question.,Ask me a question.
+scores:3
+
+word:answer
+meanings:daedap
+examples:I know the answer.,Give me an answer.
+scores:3
+
+word:situation
+meanings:sanggwang
+examples:This is a difficult situation.,We are in a bad situation.
+scores:3
+
+word:development
+meanings:baljeon
+examples:Economic development.,The city is under development.
+scores:3
+
+word:conscience
+meanings:yangsim
+examples:He has a strong conscience.,His conscience bothered him.
+scores:4
+
+word:dichotomy
+meanings:ijeoron
+examples:The dichotomy between good and evil.,There is a clear dichotomy.
+scores:4
+
+word:juxtapose
+meanings:byeongchi
+examples:Juxtapose these two images.,They juxtaposed the old and the new.
+scores:4
+
+word:paradigm
+meanings:paradigm
+examples:A new paradigm shift.,He changed the paradigm.
+scores:4
+
+word:rhetoric
+meanings:mireoto
+examples:Political rhetoric.,He used strong rhetoric.
+scores:4
+
+word:ambiguous
+meanings:mohohan
+examples:The meaning is ambiguous.,His answer was ambiguous.
+scores:4
+
+word:epistemology
+meanings:insikron
+examples:The study of epistemology.,Questions of epistemology.
+scores:4
+
+word:existential
+meanings:jonjaeui
+examples:An existential crisis.,Existential questions.
+scores:4
+
+word:incongruous
+meanings:eoulliji anhneun
+examples:His behavior was incongruous.,The two ideas are incongruous.
+scores:4
+
+word:transcendental
+meanings:chowalui
+examples:Transcendental experience.,Transcendental philosophy.
+scores:4

@@ -1,39 +1,49 @@
-word:apple
-meanings:sagwa
-examples:You ate an apple.,She loves apple pie.
+word:time
+meanings:sigan
+examples:What time is it?,I have no time.
+scores:2
 
-word:banana
-meanings:banana
-examples:Bananas are yellow.,I like bananas.
+word:water
+meanings:mul
+examples:I drink water.,The water is cold.
+scores:2
 
-word:cat
-meanings:goyangi
-examples:The cat is sleeping.,She adopted a cat.
+word:day
+meanings:nal
+examples:Today is a good day.,I work every day.
+scores:2
 
-word:dog
-meanings:gae
-examples:The dog is barking.,I love dogs.
+word:night
+meanings:bam
+examples:It is night.,I sleep at night.
+scores:2
 
-word:book
-meanings:chaek
-examples:I read a book yesterday.,Books are fun to read.
+word:school
+meanings:hakgyo
+examples:I go to school.,She teaches at school.
+scores:2
 
-word:mountain
-meanings:san
-examples:We climbed a mountain.,The mountain was beautiful.
+word:family
+meanings:gajok
+examples:I love my family.,He has a big family.
+scores:3
 
-word:river
-meanings:gang
-examples:The river flows to the sea.,We swam in the river.
+word:story
+meanings:iyagi
+examples:Tell me a story.,This is a true story.
+scores:3
 
-word:forest
-meanings:sum
-examples:The forest is dense.,Many animals live in the forest.
+word:music
+meanings:eumak
+examples:I like music.,She plays music.
+scores:3
 
-word:philosophy
-meanings:cheolhak
-examples:I am studying philosophy.,Philosophy is a complex subject.
+word:serendipity
+meanings:udeonbgyeongheom
+examples:Meeting her was serendipity.,It was a moment of serendipity.
+scores:4
 
-word:mathematics
-meanings:suhak
-examples:Mathematics is my favorite subject.,She excels in mathematics.
+word:mellifluous
+meanings:ammihada
+examples:Her voice was mellifluous.,The music was mellifluous.
+scores:4

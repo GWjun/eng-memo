@@ -15,27 +15,31 @@ public class Util {
       String word = null;
       List<String> meaning = new ArrayList<>();
       List<String> sentence = new ArrayList<>();
+      int score = 0;
 
       String line;
       while ((line = reader.readLine()) != null) {
         line = line.trim();
 
         if (line.isEmpty() && word != null) {
-          wordDataList.add(new WordData(word, meaning, sentence));
+          wordDataList.add(new WordData(word, meaning, sentence, score));
           word = null;
           meaning = new ArrayList<>();
           sentence = new ArrayList<>();
+          score = 0;
         } else if (line.startsWith("word:")) {
           word = line.substring(5).trim();
         } else if (line.startsWith("meanings:")) {
           meaning = Arrays.asList(line.substring(9).trim().split(","));
         } else if (line.startsWith("examples:")) {
           sentence = Arrays.asList(line.substring(9).trim().split(","));
+        } else if (line.startsWith("scores:")) {
+          score = Integer.parseInt(line.substring(7).trim());
         }
       }
 
       if (word != null) {
-        wordDataList.add(new WordData(word, meaning, sentence));
+        wordDataList.add(new WordData(word, meaning, sentence, score));
       }
     } catch (IOException e) {
       throw new RuntimeException(e);
@@ -47,8 +51,8 @@ public class Util {
   public static void writeWordData(List<Integer> idxList, List<WordData> wordDataList) {
     try (BufferedWriter writer = new BufferedWriter(new FileWriter("src/word.txt", true))) {
       for (int i : idxList) {
-          WordData wordData = wordDataList.get(i);
-          writer.write(formatWordData(wordData));
+        WordData wordData = wordDataList.get(i);
+        writer.write(formatWordData(wordData));
       }
     } catch (IOException e) {
       throw new RuntimeException(e);
